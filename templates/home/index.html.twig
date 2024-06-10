@@ -24,34 +24,37 @@
 				<div class="portfolio__metadata sction-metadata">
 					<h2 class="title">Mes Projets</h2>
 				</div>
-
 				<div class="swiper myswiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img src="https://source.unsplash.com/500x500" alt="">
+							<img src="{{ asset('assets/images/appleCloneHome.png') }}" alt="AppleCloneHome" data-text="<h3>Apple Home</h3><p>J'ai voulu reproduire une page d'accueil Apple dans laquelle j'ai mis l'accent sur le style du header (barre de navigation / header), le tout fait en pur HTML / CSS / JS.</p>" data-url="https://kris86000.github.io/AppleCloneHome/">
 						</div>
 						<div class="swiper-slide">
-							<img src="https://source.unsplash.com/501x501" alt="">
+							<img src="{{ asset('assets/images/MyDeezer.png') }}" alt="MyDeezer">
 						</div>
 						<div class="swiper-slide">
-							<img src="https://source.unsplash.com/502x502" alt="">
+							<img src="{{ asset('assets/images/mabeDesign.png') }}" alt="Mabe Design">
 						</div>
 						<div class="swiper-slide">
-							<img src="https://source.unsplash.com/503x503" alt="">
+							<img src="{{ asset('assets/images/epsicorp.png') }}" alt="Epsicorp">
 						</div>
 						<div class="swiper-slide">
-							<img src="https://source.unsplash.com/504x504" alt="">
+							<img src="{{ asset('assets/images/musicArt.png') }}" alt="Projet certif">
 						</div>
 						<div class="swiper-slide">
-							<img src="https://source.unsplash.com/505x505" alt="">
-						</div>
-						<div class="swiper-slide">
-							<img src="https://source.unsplash.com/506x506" alt="">
+							<img src="{{ asset('assets/images/appMeteo.png') }}" alt="AppMeteo">
 						</div>
 					</div>
 					<!-- Pagination -->
 					<div class="swiper-pagination"></div>
 				</div>
+			</div>
+			<!-- Modal projet -->
+			<div id="imageModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="modalImage">
+				<div id="modalText" class="modal-text"></div>
+				<a id="modalButton" class="modal-button btn btn--text btn-green" href="" target="_blank">Voir le projet</a>
 			</div>
 		</section>
 
@@ -61,9 +64,7 @@
 				<div class="services__metadata section-metadata">
 					<h2 class="title">Mes stacks</h2>
 					<p class="section-metadata__description">J'utilise principalement Symfony pour le développement backend, créant des applications web robustes. Pour le frontend, j'emploie HTML5, CSS3 et JavaScript , avec des notions en React pour des interfaces utilisateur dynamiques.
-																																																																																																												Côté bases de données, je travaille avec MySQL principalement pour des solutions de stockage performantes.
-																																																																																																												J'utilise FileZilla pour le transfert de fichiers afin de déployer vos projets.
-																																																																																																												De plus, j'intègre Google Analytics et d'autres outils de suivi pour analyser les performances des applications.</p>
+											De plus, j'intègre Google Analytics et d'autres outils de suivi pour analyser les performances des applications.</p>
 				</div>
 				<div class="services__image-wrapper">
 					<img src="{{ asset('assets/images/stack1.jpg') }}" alt="">
@@ -133,7 +134,7 @@
 					<a href="/dl-cv" class="btn btn--text btn-green">Télécharger mon CV</a>
 				</div>
 				<div class="about__images">
-					<img src="{{ asset('assets/images/moi1.jpeg') }}" alt="" class="about__images-image about__images-image--top">
+					<img src="{{ asset('assets/images/Chris1.jpg') }}" alt="" class="about__images-image about__images-image--top">
 					<img src="{{ asset('assets/images/moi2.jpeg') }}" alt="" class="about__images-image about__images-image--bottom">
 				</div>
 			</div>
