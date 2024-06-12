@@ -21,7 +21,7 @@ class CVController extends AbstractController
     #[Route('/dl-cv', name: 'dl_cv')]
     public function telechargerCvPdf(): Response
     {
-        $fichier = "CV-baudouinChristopher.pdf"; // Nom du fichier PDF
+        $fichier = "Baudouin_ChristopherCV.pdf"; // Nom du fichier PDF
         $cheminFichier = $this->getParameter('kernel.project_dir') . '/public/assets/images/' . $fichier; // Chemin vers le fichier PDF
 
         if (!file_exists($cheminFichier)) {
