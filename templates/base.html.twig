@@ -13,85 +13,79 @@
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-		<link rel="stylesheet" href="{{ asset('assets/style/style.css') }}">
-		{% block javascripts %}
-			{% block importmap %}
-				{{ importmap('app') }}
-			{% endblock %}
-		{% endblock %}
-	</head>
-	{% block header %}
-		<header class="header">
-			<nav class="navbar container">
-				<a href="/" class="navbar__logo">
-					<img src="" alt="" class="navbar__logo-image">
-				</a>
-				<div class="navbar__menu">
-					<ul class="navbar__list">
-						<li class="navbar__list-item">
-							<a href="#home" class="navbar__list-link">Accueil</a>
-						</li>
-						<li class="navbar__list-item">
-							<a href="#portfolio" class="navbar__list-link">Projets</a>
-						</li>
-						<li class="navbar__list-item">
-							<a href="#services" class="navbar__list-link">Développement web</a>
-						</li>
-						<li class="navbar__list-item">
-							<a href="#about" class="navbar__list-link">Présentation</a>
-						</li>
-					</ul>
-				</div>
-				<div class="navbar__btn-group">
-					<a href="mailto:contact@epsicorp-pro.fr" class="btn btn--text btn--transparent">Me contacter</a>
-					<button type="button" class="btn btn--action" id="menu-toggler">
-						<svg width="19" height="14" viewbox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M10.3333 0.999999L0.999918 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-							<path d="M17.3333 6.83333L0.999916 6.83333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-							<path d="M10.3333 12.6667L0.999918 12.6667" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</button>
-				</div>
-			</nav>
-		</header>
-
-	{% endblock %}
-	<body>
-		{% block body %}{% endblock %}
-	</body>
-	{% block footer %}
-		<footer class="footer">
-			<div class="footer__container container">
-				<div class="footer__group">
-					<h2 class="footer__title title tittle--main">Vous cherchez un Développeur ?</h2>
-					<p class="available">A l'écoute de toutes opportunités</p>
-					<p class="footer__telephone">
-						<i class="ri-phone-fill"></i>06 41 07 77 23
-					</p>
-					<a href="mailto:contact@epsicorp-pro.fr" class="btn btn--text btn--transparent">Me contacter par mail</a>
-				</div>
-				<span class="footer__separator"></span>
-				<div class="footer__group">
-					<a href="https://epsicorp-pro.fr/" class="footer__logo">
-						<img src="{{ asset('assets/images/Logo_Kris_white.png') }}" alt="" style="width: 120px; height: 120px;">
+		<link rel="stylesheet" href="{{ asset('assets/style/style.css') }}"> {% block javascripts %}{% endblock %}
+		</head>
+		{% block header %}
+			<header class="header">
+				<nav class="navbar container">
+					<a href="/" class="navbar__logo">
+						<img src="" alt="" class="navbar__logo-image">
 					</a>
-					<p class="footer__description"></p>
-					<ul class="footer__list">
-						<li class="footer__list-item">
-							<a href="https://www.linkedin.com/in/christopher-baudouin-547350197/" class="footer__list-link">
-								<i class="ri-linkedin-fill"></i>
-							</a>
-						</li>
-						<li class="footer__list-item">
-							<a href="https://github.com/kris86000" class="footer__list-link">
-								<i class="ri-github-line"></i>
-							</a>
-						</li>
-					</ul>
-					<span class="footer__copyright">Christopher Baudouin 2024 &copy; Tous droits réservés</span>
+					<div class="navbar__menu">
+						<ul class="navbar__list">
+							<li class="navbar__list-item">
+								<a href="#home" class="navbar__list-link">Accueil</a>
+							</li>
+							<li class="navbar__list-item">
+								<a href="#portfolio" class="navbar__list-link">Projets</a>
+							</li>
+							<li class="navbar__list-item">
+								<a href="#services" class="navbar__list-link">Développement web</a>
+							</li>
+							<li class="navbar__list-item">
+								<a href="#about" class="navbar__list-link">Présentation</a>
+							</li>
+						</ul>
+					</div>
+					<div class="navbar__btn-group">
+						<a href="mailto:contact@epsicorp-pro.fr" class="btn btn--text btn--transparent">Me contacter</a>
+						<button type="button" class="btn btn--action" id="menu-toggler">
+							<svg width="19" height="14" viewbox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.3333 0.999999L0.999918 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M17.3333 6.83333L0.999916 6.83333" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M10.3333 12.6667L0.999918 12.6667" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+					</div>
+				</nav>
+			</header>
+
+		{% endblock %}
+		<body>
+			{% block body %}{% endblock %}
+		</body>
+		{% block footer %}
+			<footer class="footer">
+				<div class="footer__container container">
+					<div class="footer__group">
+						<h2 class="footer__title title tittle--main">Vous cherchez un Développeur ?</h2>
+						<p class="available">A l'écoute de toutes opportunités</p>
+						<p class="footer__telephone">
+							<i class="ri-phone-fill"></i>06 41 07 77 23
+						</p>
+						<a href="mailto:contact@epsicorp-pro.fr" class="btn btn--text btn--transparent">Me contacter par mail</a>
+					</div>
+					<span class="footer__separator"></span>
+					<div class="footer__group">
+						<a href="https://epsicorp-pro.fr/" class="footer__logo">
+							<img src="{{ asset('assets/images/Logo_Kris_white.png') }}" alt="" style="width: 120px; height: 120px;">
+						</a>
+						<p class="footer__description"></p>
+						<ul class="footer__list">
+							<li class="footer__list-item">
+								<a href="https://www.linkedin.com/in/christopher-baudouin-547350197/" class="footer__list-link">
+									<i class="ri-linkedin-fill"></i>
+								</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="https://github.com/kris86000" class="footer__list-link">
+									<i class="ri-github-line"></i>
+								</a>
+							</li>
+						</ul>
+						<span class="footer__copyright">Christopher Baudouin 2024 &copy; Tous droits réservés</span>
+					</div>
 				</div>
-			</div>
-		</footer>
-	{% endblock %}
-	<script src="assets/js/erreurGestion.js"></script>
-</html>
+			</footer>
+		{% endblock %}
+	</html>
